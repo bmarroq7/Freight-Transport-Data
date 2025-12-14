@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cumulative_segments_by_day' inline='true' name='federated.06mz95p1frew2518jkhxa1j6cebp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cumulative_segments_by_day' name='textscan.1l9d9h91rvkaet1gcbznt1rmblab'>
+            <connection class='textscan' directory='C:/Users/mauri/Downloads' filename='cumulative_segments_by_day.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1l9d9h91rvkaet1gcbznt1rmblab' name='cumulative_segments_by_day.csv' table='[cumulative_segments_by_day#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='date' name='F1' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='integer' name='F3' ordinal='2' />
+            <column datatype='integer' name='F4' ordinal='3' />
+            <column datatype='integer' name='F5' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cumulative_segments_by_day.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[cumulative_segments_by_day.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[cumulative_segments_by_day.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[cumulative_segments_by_day.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[cumulative_segments_by_day.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[cumulative_segments_by_day.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Day' datatype='date' name='[F1]' role='dimension' type='ordinal' />
+      <column caption='Time Segment' datatype='string' name='[F2]' role='dimension' type='nominal' />
+      <column caption='Time Segment Sort' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+      <column caption='Segment Traffic' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+      <column caption='Cumulative Segment Traffic' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+      <column caption='cumulative_segments_by_day.csv' datatype='table' name='[__tableau_internal_object_id__].[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]' role='measure' type='quantitative' />
+      <column-instance column='[F2]' derivation='None' name='[none:F2:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/mauri/AppData/Local/Temp/TableauTemp/#TableauTemp_1np74s70354i8u10bh17v08kizo2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/12/2025 05:58:26 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cumulative_segments_by_day.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cumulative_segments_by_day.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F3</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cumulative_segments_by_day.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F4</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cumulative_segments_by_day.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>472</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F5</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cumulative_segments_by_day.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>472</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:F2:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;12–3 AM&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;12–3 PM&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;9–12 AM&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;6–9 PM&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;6–9 AM&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;3–6 PM&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;3–6 AM&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;9–12 PM&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cumulative_segments_by_day.csv' id='cumulative_segments_by_day.csv_440E52C1263043C797D842E5CA3D1FDA'>
+            <properties context=''>
+              <relation connection='textscan.1l9d9h91rvkaet1gcbznt1rmblab' name='cumulative_segments_by_day.csv' table='[cumulative_segments_by_day#csv]' type='table'>
+                <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+                  <column datatype='date' name='F1' ordinal='0' />
+                  <column datatype='string' name='F2' ordinal='1' />
+                  <column datatype='integer' name='F3' ordinal='2' />
+                  <column datatype='integer' name='F4' ordinal='3' />
+                  <column datatype='integer' name='F5' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Running Total'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cumulative_segments_by_day' name='federated.06mz95p1frew2518jkhxa1j6cebp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06mz95p1frew2518jkhxa1j6cebp'>
+            <column caption='Day' datatype='date' name='[F1]' role='dimension' type='ordinal' />
+            <column caption='Time Segment' datatype='string' name='[F2]' role='dimension' type='nominal' />
+            <column caption='Time Segment Sort' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+            <column caption='Segment Traffic' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+            <column-instance column='[F4]' derivation='Sum' name='[cum:sum:F4:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[F3]' derivation='Min' name='[min:F3:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[F2]' derivation='None' name='[none:F2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F3]' derivation='Sum' name='[sum:F3:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.06mz95p1frew2518jkhxa1j6cebp].[none:F1:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:F1:ok]' member='#2019-01-01#' />
+              <groupfilter function='member' level='[none:F1:ok]' member='#2019-01-02#' />
+              <groupfilter function='member' level='[none:F1:ok]' member='#2019-01-03#' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.06mz95p1frew2518jkhxa1j6cebp].[none:F2:nk]' direction='ASC' using='[federated.06mz95p1frew2518jkhxa1j6cebp].[min:F3:qk]' />
+          <slices>
+            <column>[federated.06mz95p1frew2518jkhxa1j6cebp].[none:F1:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.06mz95p1frew2518jkhxa1j6cebp].[none:F2:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.06mz95p1frew2518jkhxa1j6cebp].[cum:sum:F4:qk]</rows>
+        <cols>[federated.06mz95p1frew2518jkhxa1j6cebp].[none:F2:nk]</cols>
+        <pages>
+          <column>[federated.06mz95p1frew2518jkhxa1j6cebp].[sum:F3:ok]</column>
+        </pages>
+        <page-trail-options enabled='true' mark-type='all' />
+      </table>
+      <simple-id uuid='{26DB3145-32E4-48DD-9FF2-1391C10C3384}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Running Total'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.06mz95p1frew2518jkhxa1j6cebp].[none:F1:ok]' type='filter' />
+            <card type='currpage' />
+            <card pane-specification-id='0' param='[federated.06mz95p1frew2518jkhxa1j6cebp].[none:F2:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>24</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.06mz95p1frew2518jkhxa1j6cebp].[none:F1:ok]</field>
+            <field>[federated.06mz95p1frew2518jkhxa1j6cebp].[none:F2:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E2FB3565-6811-4689-9630-0165BE96878D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Running Total' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
