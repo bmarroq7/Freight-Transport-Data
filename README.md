@@ -1,15 +1,15 @@
 # Freight-Transport-Data
 Freight Transport Analytics Project
 
-This project analyzes Belgian freight transport data using Hive, HDFS, and Power BI. The workflow follows the required big-data processing steps: loading a dataset into HDFS, creating a debugging sample, cleaning and enriching the data in Hive, exporting results, and visualizing them in Power BI.
+This project analyzes Belgian freight transport data using Hive, HDFS, Power BI, and Tableau. The workflow follows the required big-data processing steps: loading a dataset into HDFS, creating a debugging sample, cleaning and enriching the data in Hive, exporting results, and visualizing them.
 
 Files Included
 
 BelgiumFreight.hql contains the full HiveQL script for raw ingestion, cleaning, enrichment, and export.
 HDFS.txt contains all Linux and HDFS commands used for loading data and retrieving results.
-Freight Transport Report.pbix is the Power BI report with all final visuals.
-
-Project Visuals.pdf contains an exported version of the dashboard.
+Freight Transport Report.pbix is the Power BI report with all Power BI visuals.
+Animated Running Total.twb is the Tableau visual workbook.
+Project Visuals.pdf contains an exported version of Power BI visuals.
 
 Dataset Used
 
